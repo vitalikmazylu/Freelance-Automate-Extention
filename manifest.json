@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Freelance Automate Extensions",
+  "description": "Extension which parse from freelance sites and send notification about new project",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "logo.jpeg"
+  },
+	"content_scripts": [
+     {
+       "js": ["script/content.js"],
+       "matches": [
+         "https://freelancehunt.com/projects?skills[]=1&skills[]=124",
+         "https://www.upwork.com/nx/search/jobs/*"
+       ]
+     }
+   ],
+   "background": {
+    "service_worker": "script/background.js"
+  },
+ "permissions": ["scripting", "activeTab"]
+
+
+}

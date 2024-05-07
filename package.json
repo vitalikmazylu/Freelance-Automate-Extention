@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "node-telegram-bot-api": "^0.65.1",
+    "playwright": "^1.43.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.43.1",
+    "@types/node": "^20.12.8"
+  },
+  "scripts": {}
+}
