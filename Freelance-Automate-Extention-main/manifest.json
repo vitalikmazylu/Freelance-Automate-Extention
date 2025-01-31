@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Freelance Automate Extensions",
+  "description": "Extension which parse from freelance sites and send notification about new project",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "logo.jpeg"
+  },
+	"content_scripts": [
+     {
+       "js": ["script/getmessage.js","script/freelance.js","script/freelancercom.js","script/freelancehunt.js","script/upwork.js","script/content.js"],
+       "matches": [
+         "https://freelancehunt.com/projects?*",
+         "https://www.upwork.com/nx/search/jobs/*",
+         "https://www.upwork.com/jobs/*",
+         "https://www.upwork.com/ab/proposals/job/*",
+         "https://freelancehunt.com/projects?*",
+         "https://freelancehunt.com/project/*",
+         "https://www.freelancer.com/search/projects?*",
+         "https://www.freelancer.com/projects/*"
+       ]
+     }
+   ],
+   "background": {
+    "service_worker": "script/background.js",
+    "type":"module"
+  },
+ "permissions": ["scripting", "activeTab","storage"]
+
+
+}

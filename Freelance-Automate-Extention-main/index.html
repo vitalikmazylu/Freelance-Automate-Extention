@@ -1,0 +1,64 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles/index.css">
+<meta charset="utf-8">
+</head>
+
+  <body>
+    <h1>Росширения для автоматизаций роботы по поиску заказов</h1>
+
+<section>
+<article>Информация о телеграм бот</article>
+<ul>
+<li><span>chat id пользователя:</span> <input type='text' name="chat_id"/></li>
+<li><span>Token бота:</span> <input type='password' name="token"/></li>
+</ul>
+
+</section>
+
+<section>
+<article>Коментарий</article>
+<ul>
+<li><span>Описания на Руском:</span> <textarea type='text' name="description_ru"></textarea></li>
+<li><span>Описания на Английском:</span> <textarea type='text' name="description_en"></textarea></li>
+</ul>
+
+</section>
+
+<section>
+  <article>Выберите фриланс биржа</article>
+  <ul>
+  <li name="upwork">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAcCAMAAAADZYwMAAAAllBMVEX///8sLCxh1ys1NTX8/vzw8PCfn5+zs7OZmZms6Jlj2DAxMTFn2Dbd3d0pKSl4eHjy+++67KpXV1fl5eWtra3L8MA8PDyCgoJcXFxlZWXExMRDQ0ORkZFMTEzc9dSO4XHF77lQ1ACn55Kz6qKW4ny/7bFu2kMcHByd5YVubm7p+OTp/uOMio2E3mPMyM3Ozs7T8sp2206iHIO9AAABaElEQVQ4je2SW3PCIBCFlyUhkQBBQ3MRNV6pWq32//+5QlpbrQ92nM70xfOww8N+cM6yAA/9u5I8vg8cqTMw0tFXvaWUnIHT2dzXxWz5cc1191nvBfiEPV/7gntm5dD1QQ6GAHXjI9kCGCU0BTjQhNGCeVA+m0tQLKCH3GsNtII4y2LYlFBlddpkOchynDUdmCt5CTqxRT6BrcOXHYWhtUPIRgWpwkyI9KB3yUrW0N0Pq3uPhrRT7L8qmVbVSKpD0oWKiZFZMMgstdV3xtDex+neiaM/rXABytTJcGwIJOoEkiSA9GDtaT5bdBqiN5xoLuYRaIcT2AyoLLJBA4Xadd8nP0ESH8jm9ORS8L0Qe9DoBHect36cJQWwpQnxGtb4oFJ1oCogVeZErhGxjeDI26U/BeOFygF2NIzPWFIyADkOoBl4n3n99Zl6osMO4Mov0PUC3Fyp1oe7Sxx/s67X0sv1fQ8+9Gd6BzweFxoUPZp+AAAAAElFTkSuQmCC" />
+   <span>Upwork:</span>
+    <input type='checkbox' name="company" value="Upwork"/>
+<div><span>Время обновления :</span> <input type="number" name="updatetime"></div>
+  </li>
+    <li name="freelancer">
+      <img src='https://www.f-cdn.com/assets/img/fl-logo-c555380d.svg' />
+      <span>Frelancer:</span> 
+      <input type='checkbox' name="company" value="Frelancer"/>
+      <div><span>Время обновления :</span> <input type="number" name="updatetime"></div> 
+    </li>
+
+    <li name='freelancehunt' >
+      <img src='https://freelancehunt.com/static/images/logo/freelancehunt-uk.svg?v6' />
+      <span>FreelanceHunt:</span> 
+      <input type='checkbox' name="company" value="FrelancerHunt"/>
+      <div><span>Время обновления :</span> <input type="number" name="updatetime"></div>
+    </li>
+
+  </ul>
+</section>
+
+<section>
+
+<div><button id="start_btn" type="button" name="button">Запустить</button> <button id="stop_btn" type="button" name="button">Остановить</button></div>
+
+</section>
+
+<script type="text/javascript" src="script/index.js">
+
+</script>
+  </body>
+</html>
